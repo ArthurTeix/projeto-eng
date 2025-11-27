@@ -1,0 +1,94 @@
+body {
+    font-family: 'Lexend', sans-serif; /* Define a fonte principal do site */
+    background-color: #f6f6f8; /* Cor de fundo clara */
+    color: #0f172a; /* Cor padrão do texto */
+    -webkit-font-smoothing: antialiased; /* Suaviza fontes no Chrome/Safari */
+    -moz-osx-font-smoothing: grayscale; /* Suaviza fontes no Firefox/macOS */
+}
+
+/* Wrapper geral da página */
+.pagina-geral {
+    position: relative; /* Permite posicionamento relativo dos filhos */
+    display: flex; /* Ativa layout flexível */
+    min-height: 100vh; /* Ocupa altura total da tela */
+    width: 100%; /* Largura total */
+    flex-direction: column; /* Organiza itens em coluna */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Container principal */
+.caixa-layout {
+    display: flex; /* Flexbox para organização */
+    height: 100%; /* Ocupa toda altura disponível */
+    flex-grow: 1; /* Expande para preencher espaço restante */
+    flex-direction: column; /* Organiza itens em coluna */
+}
+
+/* Conteúdo central */
+.caixa-conteudo {
+    display: flex; /* Flexbox */
+    flex: 1; /* Expande conforme espaço disponível */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding-top: 1.25rem; /* Espaço interno superior */
+    padding-bottom: 1.25rem; /* Espaço interno inferior */
+    padding-left: 1rem; /* Espaço interno esquerdo */
+    padding-right: 1rem; /* Espaço interno direito */
+}
+
+/* Container de largura máxima */
+.caixa-principal {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Itens empilhados verticalmente */
+    width: 100%; /* Largura total */
+    max-width: 960px; /* Limita a largura máxima */
+    flex: 1; /* Expande conforme necessário */
+}
+
+/* Conteúdo específico dos termos */
+.conteudo-termos {
+    padding-top: 2.5rem; /* Espaço superior */
+    padding-bottom: 2.5rem; /* Espaço inferior */
+}
+
+/* Cabeçalho da página */
+.cabecalho-pagina {
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    justify-content: space-between; /* Espaça elementos nas extremidades */
+    gap: 0.75rem; /* Espaço entre elementos */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+/* Título da página */
+.titulo-pagina {
+    color: #0f172a; /* Cor do título */
+    font-size: 2.25rem; /* Tamanho grande */
+    font-weight: 900; /* Negrito intenso */
+    line-height: 1.25; /* Altura da linha */
+    letter-spacing: -0.033em; /* Ajuste de espaçamento entre letras */
+    min-width: 18rem; /* Largura mínima do título */
+}
+
+/* Texto meta/informativo */
+.texto-meta {
+    color: #64748b; /* Cor mais suave */
+    font-size: 0.875rem; /* Texto menor */
+    font-weight: 400; /* Peso normal */
+    line-height: 1.5; /* Altura da linha */
+    padding-bottom: 0.75rem; /* Espaço inferior */
+    padding-top: 0.25rem; /* Espaço superior */
+    padding-left: 1rem; /* Espaço lateral esquerdo */
+    padding-right: 1rem; /* Espaço lateral direito */
+}
+
+/* Texto introdutório */
+.texto-intro {
+    color: #1e293b; /* Cor do texto introdutório */
+    font-size: 1rem; /* Tamanho padrão */
+    font-weight: 400; /* Peso normal */
+    line-height: 1.5; /* Altura da linha */
+    padding-bottom: 0.75rem; /* Espaço inferior */
+    padding-top: 0.25rem; /* Espaço superior */
+    padding-left: 1rem; /* Espaço lateral esquerdo */
+    padding-right: 1rem; /* Espaço lateral direito */
+}

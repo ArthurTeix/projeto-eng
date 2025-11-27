@@ -1,0 +1,114 @@
+body {
+    font-family: 'Lexend', sans-serif; /* Define a fonte principal */
+    background-color: #f6f6f8; /* Define cor de fundo clara */
+    color: #111118; /* Cor padrão do texto */
+    -webkit-font-smoothing: antialiased; /* Suaviza fontes no Chrome/Safari */
+    -moz-osx-font-smoothing: grayscale; /* Suaviza fontes no Firefox */
+}
+
+/* Wrapper geral */
+.pagina-geral {
+    position: relative; /* Permite posicionamento relativo dos filhos */
+    display: flex; /* Ativa layout flexível */
+    min-height: 100vh; /* Ocupa altura total da tela */
+    width: 100%; /* Largura total */
+    flex-direction: column; /* Organiza itens em coluna */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+/* Container principal */
+.caixa-layout {
+    display: flex; /* Flexbox */
+    height: 100%; /* Altura total */
+    flex-grow: 1; /* Preenche espaço restante */
+    flex-direction: column; /* Organiza em coluna */
+}
+
+/* Centralização */
+.centro-conteudo {
+    display: flex; /* Flexbox para centralização */
+    flex: 1; /* Ocupar todo o espaço possível */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding-top: 1.25rem; /* Espaço superior */
+    padding-bottom: 1.25rem; /* Espaço inferior */
+}
+
+/* Largura máxima */
+.caixa-largura {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Itens empilhados */
+    width: 100%; /* Largura total */
+    max-width: 960px; /* Limita a largura máxima */
+    flex: 1; /* Expande conforme necessário */
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+    flex-grow: 1; /* Preenche área disponível */
+    padding: 2.5rem 1rem; /* Espaçamento interno vertical e horizontal */
+}
+
+/* Cabeçalho da página */
+.cabecalho-pagina {
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: space-between; /* Espaça itens nas extremidades */
+    gap: 0.75rem; /* Espaço entre os elementos */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 0.5rem; /* Espaço inferior */
+}
+
+/* Agrupamento de textos do cabeçalho */
+.grupo-texto-cabecalho {
+    display: flex; /* Flexbox */
+    width: 100%; /* Ocupa toda a largura */
+    flex-direction: column; /* Empilha textos */
+    gap: 0.75rem; /* Espaço entre itens */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Título */
+.titulo-pagina {
+    color: #111118; /* Cor do título */
+    font-size: 2.25rem; /* Tamanho grande */
+    font-weight: 900; /* Bem encorpado */
+    line-height: 1.25; /* Altura da linha */
+    letter-spacing: -0.033em; /* Letras mais juntas */
+}
+
+/* Subtítulo */
+.subtitulo-pagina {
+    color: #636388; /* Tom suave */
+    font-size: 1rem; /* Tamanho padrão */
+    font-weight: 400; /* Peso normal */
+    line-height: 1.5; /* Altura da linha confortável */
+}
+
+/* Texto meta */
+.texto-meta {
+    color: #636388; /* Cor suave */
+    font-size: 0.875rem; /* Texto menor */
+    font-weight: 400; /* Peso normal */
+    line-height: 1.5; /* Altura confortável */
+    padding-bottom: 1.5rem; /* Espaço abaixo */
+    padding-top: 0.25rem; /* Espaço acima */
+    padding-left: 1rem; /* Espaço lateral esquerdo */
+    padding-right: 1rem; /* Espaço lateral direito */
+    text-align: center; /* Centraliza texto */
+}
+
+/* Texto introdutório */
+.texto-intro {
+    color: #111118; /* Cor principal */
+    font-size: 1rem; /* Tamanho padrão */
+    font-weight: 400; /* Peso normal */
+    line-height: 1.625; /* Altura confortável */
+    padding-bottom: 2rem; /* Espaço inferior */
+    padding-top: 0.25rem; /* Espaço superior */
+    padding-left: 1rem; /* Lateral esquerda */
+    padding-right: 1rem; /* Lateral direita */
+    text-align: center; /* Centraliza texto */
+    max-width: 48rem; /* Limita largura para melhor leitura */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}

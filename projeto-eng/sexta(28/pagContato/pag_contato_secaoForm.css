@@ -1,0 +1,149 @@
+body {
+  font-family: 'Lexend', sans-serif; /* Define a fonte principal da página */
+  background-color: #f6f6f8; /* Cor de fundo clara */
+  color: #111118; /* Cor padrão do texto */
+  -webkit-font-smoothing: antialiased; /* Suaviza fontes no Chrome/Safari */
+  -moz-osx-font-smoothing: grayscale; /* Suaviza fontes no Firefox/macOS */
+}
+
+/* Wrapper geral da página */
+.pagina {
+  position: relative; /* Permite posicionamento relativo de elementos filhos */
+  display: flex; /* Layout flexível */
+  min-height: 100vh; /* Ocupa altura total da tela */
+  width: 100%; /* Ocupa toda largura disponível */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Container principal da página */
+.area-layout {
+  display: flex; /* Flexbox para layout interno */
+  height: 100%; /* Ocupa toda a altura disponível */
+  flex-grow: 1; /* Expande para ocupar espaço restante */
+  flex-direction: column; /* Organiza elementos em coluna */
+}
+
+/* Conteúdo principal da página */
+.area-principal {
+  flex: 1; /* Expande conforme espaço disponível */
+  padding: 3rem 1rem; /* Espaçamento interno vertical e horizontal */
+}
+
+/* Grade do formulário de contato */
+.grade-contato {
+  display: grid; /* Layout em grid */
+  grid-template-columns: 1fr; /* Uma coluna por padrão */
+  gap: 3rem; /* Espaço entre os elementos da grid */
+  align-items: start; /* Alinha itens ao topo da célula */
+}
+
+/* Caixa do formulário */
+.caixa-formulario {
+  background-color: #ffffff; /* Fundo branco */
+  padding: 1.5rem; /* Espaçamento interno */
+  border-radius: 0.5rem; /* Bordas arredondadas */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05); /* Sombra leve */
+  border: 1px solid rgba(0,0,0,0.05); /* Borda fina cinza clara */
+}
+
+/* Formulário de contato */
+.formulario-contato {
+  display: flex; /* Flexbox para os campos */
+  flex-direction: column; /* Campos empilhados verticalmente */
+  gap: 1.5rem; /* Espaço entre os campos */
+}
+
+/* Grupo de cada campo */
+.grupo-campo {
+  display: flex; /* Flexbox interno */
+  flex-direction: column; /* Label e input empilhados */
+  flex: 1; /* Expande conforme necessário */
+}
+
+/* Label do campo */
+.texto-campo {
+  color: #111118; /* Cor do texto */
+  font-size: 1rem; /* Tamanho do texto */
+  font-weight: 500; /* Peso médio */
+  line-height: 1.5; /* Altura da linha */
+  padding-bottom: 0.5rem; /* Espaço abaixo do label */
+}
+
+/* Inputs e textarea */
+.campo-input,
+.campo-texto {
+  display: flex; /* Flexbox */
+  width: 100%; /* Largura total */
+  flex: 1; /* Expande conforme espaço disponível */
+  overflow: hidden; /* Oculta excesso de conteúdo */
+  border-radius: 0.25rem; /* Bordas levemente arredondadas */
+  color: #111118; /* Cor do texto */
+  background-color: #f6f6f8; /* Fundo cinza claro */
+  border: 1px solid #dcdce5; /* Borda cinza suave */
+  padding: 15px; /* Espaçamento interno */
+  font-size: 1rem; /* Tamanho do texto */
+  font-weight: 400; /* Peso normal */
+  line-height: 1.5; /* Altura da linha */
+  transition: all 0.15s; /* Transições suaves para hover/focus */
+  outline: none; /* Remove contorno padrão */
+}
+
+/* Input de texto curto */
+.campo-input {
+  height: 3.5rem; /* Altura fixa */
+  resize: none; /* Impede redimensionamento */
+}
+
+/* Textarea para mensagens */
+.campo-texto {
+  min-height: 9rem; /* Altura mínima */
+  resize: vertical; /* Permite redimensionamento vertical */
+}
+
+/* Placeholder dos campos */
+.campo-input::placeholder,
+.campo-texto::placeholder {
+  color: #636388; /* Cor do texto placeholder */
+}
+
+/* Efeito ao focar nos campos */
+.campo-input:focus,
+.campo-texto:focus {
+  box-shadow: 0 0 0 2px rgba(71, 71, 235, 0.5); /* Anel de foco azul */
+  border-color: transparent; /* Remove borda padrão ao focar */
+  outline: none; /* Remove contorno padrão */
+}
+
+/* Botão de envio */
+.botao-enviar {
+  display: flex; /* Flexbox */
+  min-width: 84px; /* Largura mínima */
+  width: 100%; /* Largura total */
+  cursor: pointer; /* Cursor de clique */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  overflow: hidden; /* Oculta excesso */
+  border-radius: 9999px; /* Bordas completamente arredondadas (cápsula) */
+  height: 3rem; /* Altura do botão */
+  padding: 0 1.5rem; /* Padding horizontal */
+  background-color: #4747eb; /* Cor do botão */
+  color: #ffffff; /* Cor do texto */
+  font-size: 1rem; /* Tamanho do texto */
+  font-weight: 700; /* Negrito */
+  letter-spacing: 0.015em; /* Espaçamento entre letras */
+  border: none; /* Remove borda */
+  transition: background-color 0.15s; /* Transição suave ao passar o mouse */
+}
+
+/* Hover do botão */
+.botao-enviar:hover {
+  background-color: rgba(71, 71, 235, 0.9); /* Escurece o botão ao passar o mouse */
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+  .grade-contato {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Duas colunas na grid */
+  }
+}

@@ -1,0 +1,121 @@
+body {
+  font-family: 'Lexend', sans-serif; /* Define a fonte principal da página */
+  background-color: #f8f9fa; /* Cor de fundo clara */
+  color: #343a40; /* Cor padrão do texto */
+  -webkit-font-smoothing: antialiased; /* Suaviza fontes no Chrome/Safari */
+  -moz-osx-font-smoothing: grayscale; /* Suaviza fontes no Firefox/macOS */
+}
+
+/* Container principal de conteúdo */
+.area-conteudo {
+  display: flex; /* Flexbox para layout interno */
+  flex-direction: column; /* Organiza elementos verticalmente */
+  width: 100%; /* Ocupa toda largura disponível */
+  max-width: 56rem; /* Limita largura máxima (896px) */
+  flex: 1; /* Expande para ocupar espaço restante */
+  gap: 3rem; /* Espaço entre seções */
+}
+
+/* Seções gerais */
+.secao-intro,
+.secao-time {
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Organização vertical */
+  gap: 1rem; /* Espaço interno entre elementos */
+}
+
+.secao-time {
+  gap: 2rem; /* Espaço maior no grid do time */
+}
+
+/* Títulos das seções */
+.titulo-secao {
+  font-size: 1.5rem; /* Tamanho do título */
+  font-weight: 700; /* Negrito */
+  line-height: 1.25; /* Altura da linha */
+  letter-spacing: -0.025em; /* Ajuste de espaçamento entre letras */
+  padding: 1.25rem 1rem 0.5rem; /* Padding superior, horizontal e inferior */
+  text-align: center; /* Centraliza o texto */
+  color: #343a40; /* Cor do título */
+}
+
+/* Texto genérico das seções */
+.texto-secao {
+  font-size: 1rem; /* Tamanho do texto */
+  font-weight: 400; /* Peso normal */
+  line-height: 1.625; /* Altura da linha para leitura confortável */
+  color: #343a40; /* Cor do texto */
+  padding: 0 1rem; /* Padding horizontal */
+}
+
+/* Grid para os membros do time */
+.grade-time {
+  display: grid; /* Layout em grid */
+  grid-template-columns: 1fr; /* Uma coluna por padrão */
+  gap: 1.5rem; /* Espaço entre os cards */
+  padding: 0 1rem; /* Padding horizontal */
+}
+
+/* Card individual de membro */
+.cartao-membro {
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Conteúdo organizado verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 1rem; /* Espaço interno */
+  border-radius: 0.75rem; /* Bordas arredondadas */
+  padding: 1.5rem; /* Padding interno */
+  background-color: #ffffff; /* Fundo branco */
+  border: 1px solid #e5e7eb; /* Borda cinza suave */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Sombra leve */
+  transition: all 0.3s; /* Transição suave ao hover */
+}
+
+.cartao-membro:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra maior ao passar mouse */
+  transform: translateY(-0.25rem); /* Leve elevação */
+}
+
+/* Wrapper da imagem do membro */
+.caixa-imagem {
+  position: relative; /* Permite posicionamento interno absoluto */
+  width: 7rem; /* Largura da imagem */
+  height: 7rem; /* Altura da imagem */
+}
+
+/* Foto do perfil */
+.foto-perfil {
+  width: 100%; /* Ocupa todo o wrapper */
+  height: 100%; /* Ocupa todo o wrapper */
+  border-radius: 9999px; /* Deixa totalmente circular */
+  object-fit: cover; /* Corta excesso da imagem mantendo proporção */
+  border-width: 4px; /* Espessura da borda */
+  border-style: solid; /* Tipo da borda */
+}
+
+/* Bordas coloridas específicas */
+.borda-azul .foto-perfil {
+  border-color: rgba(168, 208, 230, 0.5); /* Borda azul suave */
+}
+
+.borda-lilas .foto-perfil {
+  border-color: rgba(199, 185, 227, 0.5); /* Borda lilás suave */
+}
+
+/* Informações do membro */
+.info-membro {
+  text-align: center; /* Centraliza texto */
+}
+
+/* Nome do membro */
+.nome-membro {
+  font-size: 1.125rem; /* Tamanho do nome */
+  font-weight: 700; /* Negrito */
+  color: #343a40; /* Cor do texto */
+}
+
+/* Cargo do membro */
+.cargo-membro {
+  font-size: 0.875rem; /* Texto menor */
+  color: #636388; /* Cor secundária */
+}
